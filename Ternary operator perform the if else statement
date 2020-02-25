@@ -1,0 +1,8 @@
+public class ternaryOperator {
+    public static void main(String args[]){
+    int a=5;
+    String output=(a%2==0)?"Evan number":"Odd number";
+   System.out.println(output);
+    }
+    
+}
