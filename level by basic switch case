@@ -1,0 +1,18 @@
+import java.util.Scanner;
+class level{
+public static void main(String args[]){
+Scanner input=new Scanner(System.in);
+System.out.println("Enter level");
+int a=input.nextInt();
+switch(a){
+    case 1:System.out.println("Beginer");
+    break;
+    case 2:System.out.println("Mediam");
+    break;
+    case 3:System.out.println("Expart");
+    break;
+    default:System.out.println("Wrong level");
+
+}
+}
+}
