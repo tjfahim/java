@@ -1,0 +1,14 @@
+import java.util.Scanner;
+class evenOdd{
+public static void main(String args[]){
+Scanner input=new Scanner(System.in);
+System.out.println("Enter number");
+int a=input.nextInt();
+switch(a%2){
+    case 0:System.out.println("Evan");
+    break;
+    default:System.out.println("Odd");
+
+}
+        }
+}
