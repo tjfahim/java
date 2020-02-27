@@ -1,0 +1,64 @@
+import java.util.Scanner;
+class CseDepartment{
+public static void main(String args[]){
+Scanner dept=new Scanner(System.in);
+System.out.println("Enter 1st charecter of department(ENGLISG,CSE,BBA)");
+char d=dept.next().charAt(0);
+Scanner year=new Scanner(System.in);
+System.out.println("Enter year");
+int y=year.nextInt();
+year.close();
+switch(y){
+    case 1:System.out.println("basic");
+break;
+    case 2:
+        switch(d){
+            case 'e':System.out.println(" English");
+            break;
+            case 'E':System.out.println("English");
+            break;
+            case 'c':System.out.println("Basic Computer science,Math,Physic");
+            break;
+            case 'C':System.out.println("Basic Computer science,Math,physic");
+            break;
+            case 'b':System.out.println("Basic Electronics,Physic,Math");
+            break;
+            case 'B':System.out.println("Basic lecture,,Math");
+            break;
+            
+        }
+        break;
+    case 3:
+        switch(d){
+            case 'e':System.out.println("3rd year English Subjects");
+            break;
+            case 'E':System.out.println("3rd year English Subjects");
+            break;
+            case 'c':System.out.println("3rd year cse subjects");
+            break;
+            case 'C':System.out.println("3rd Year cse subjects");
+            break;
+            case 'b':System.out.println("3rd year BBA subjects");
+            break;
+            case 'B':System.out.println("3rd year BBA subjects");
+            break;
+        
+        }break;
+    case 4:switch(d){
+        case 'e':System.out.println("last year English subjects");
+    break;
+        case 'E':System.out.println("last yaer English subjects");
+    break;
+        case 'c':System.out.println("last year CSE subjects");
+    break;
+        case 'C':System.out.println("last year CSE subjects");
+    break;
+        case 'B':System.out.println("last year BBA subjects");
+    break;
+        case 'b':System.out.println("last year BBA subjects");
+    break;}
+break;
+}
+
+}
+}
