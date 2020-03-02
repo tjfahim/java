@@ -1,0 +1,16 @@
+
+import java.util.Scanner;
+public class series {
+    public static void main(String[] args) {
+       int j=0;
+        Scanner input=new Scanner(System.in);
+        System.out.println("Enter  series to Add");
+        int su=input.nextInt();
+        for (int i = 1; i <= su; i++) {
+            System.out.println(i+"");
+            j=j+i;
+            
+        }System.out.println(j);
+        
+    }
+}
