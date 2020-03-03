@@ -1,0 +1,34 @@
+
+package javaapplication4;
+
+
+class JavaApplication4 {
+int roll,batch;
+String name;
+
+//JavaApplication4(String n,int r,int b){
+//name=n;
+//roll=r;
+//batch=b;
+//}
+void student(String n,int r,int b){
+    
+    name=n;
+    roll=r;
+    batch=b;
+}
+void displayStudent(){
+    System.out.println("Name :" +name);
+    System.out.println("Roll :" + roll);
+    System.out.println("Batch :" + batch);
+}
+}
+ class NewClas {
+     public static void main(String[] args) {
+//        JavaApplication4 test1=new JavaApplication4("fahim" ,34 ,5);
+//        test1.displayStudent();
+//       
+        JavaApplication4 test2 = new JavaApplication4();
+        test2.student("Fahim",3,12);
+        test2.displayStudent();
+}
