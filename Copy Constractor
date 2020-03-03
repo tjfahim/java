@@ -1,0 +1,26 @@
+package javaapplication4;
+
+class CopyConstractor{
+    float id;
+    String name;
+    CopyConstractor(String n,float i){
+    name = n;
+    id = i;
+    
+    }
+    CopyConstractor(CopyConstractor g){
+    name=g.name;
+    id=g.id;
+    }
+    
+         
+    public static void main(String[] args) {
+        CopyConstractor cctr1=new CopyConstractor("Fahim",123);
+        CopyConstractor cctr2=new CopyConstractor(cctr1);
+        System.out.println(cctr1.name);
+        System.out.println(cctr2.name);
+        System.out.println(cctr2.id);
+        System.out.println(cctr1.id);
+    }
+
+            }
