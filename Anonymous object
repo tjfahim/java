@@ -1,0 +1,19 @@
+
+package javaapplication4;
+
+
+public class anonymousobj {
+    String name=null;
+    int roll;
+   void test3(String n,int r){
+       name=n;
+       roll=r;
+       System.out.println("Name : " + name);
+       System.out.println("Roll : "+ roll);
+   }
+}
+class test2{
+ public static void main(String[] args) {
+        new anonymousobj().test3("Fahim",03);
+        
+}
