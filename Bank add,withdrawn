@@ -1,0 +1,49 @@
+
+package javaapplication4;
+
+import java.util.Scanner;
+
+ class bank {
+      
+    String name;
+    int account_number,balance,add,wdrawn;
+    void deposit(int a){
+    add=a;
+    balance=balance+add;
+        System.out.println("Deoposit Added : "+ add +"Now Balance is :"+ balance);
+    
+    }
+    void displaytotal(){
+        System.out.println("Name : "+name);
+        System.out.println("Account number : "+account_number);
+        System.out.println("Your balance : "+balance);
+    }
+    void add_Id(String n,int a,int b){
+    name=n;
+    account_number=a;
+    balance=b;
+   
+    }
+    void withdrawn(int w){
+        wdrawn=w;
+    if (wdrawn<=balance)
+            System.out.println("Walcome , Withdrawn balance is"+wdrawn+" Now your balance " + (balance-wdrawn));
+    else
+            System.out.println("Your balance is lower then withdrawn");
+    }
+}class Account{
+    public static void main(String[] args) {
+       
+        bank account1=new bank();
+        account1.add_Id("Fahim",12121,5000);
+        account1.displaytotal();
+        account1.withdrawn(3000);
+        account1.deposit(10000);
+        account1.displaytotal();
+        account1.withdrawn(90000);
+        account1.withdrawn(12000);
+        account1.displaytotal();
+        
+        
+    }
+}
