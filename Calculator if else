@@ -1,0 +1,39 @@
+
+package midexam;
+
+import java.util.Scanner;
+
+class operator {
+    
+    public static void main(String[] args) {
+        Scanner input= new Scanner(System.in);
+        System.out.println("Enter 1st number");
+        float a=input.nextFloat();
+        System.out.println("Enter 2nd number");
+        float b=input.nextFloat();
+        System.out.println("Enter operation");
+        char c=input.next().charAt(0);
+        if (c=='+'){
+     System.out.println(a+b);
+        }
+        else if (c=='-'){
+                System.out.println(a-b);
+
+        }
+        else if (c=='*'){
+                System.out.println(a*b);
+
+        }
+        else if (c=='/'){
+                System.out.println(a/b);
+
+        }
+        else if (c=='%'){
+                System.out.println(a%b);
+
+        }
+        else {
+        System.out.println("Error operator");
+        
+    }
+}}
